@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pry-rails'
 gem 'bootstrap-sass'
 gem 'figaro'
+gem 'devise'
 
 
 
