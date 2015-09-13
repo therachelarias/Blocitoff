@@ -1,19 +1,8 @@
-<%= form_for [user, item] do |f| %>
-  <% if item.errors.any? %>
-    <div class="alert alert-danger">
-      <h4>There are <%= pluralize(item.errors.count, "errors") %>.</h4>
-      <ul>
-        <% item.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-    <% end %>
-    <%= form_group_tag(item.errors[:title]) do %>
-      <%= f.label :title %>
-      <%= f.text_field :title, class: 'form-control', placeholder: "Enter item" %>
-    <% end %>
+<%= form_for [@user, @item.new] do |f| %>
     <div class="form-group">
-      <%= f.submit "Save", class: 'btn btn-success' %>
+      <%= f.text_field :name, class: 'form-control', placeholder: "Enter item here" %>
     </div>
-  <% end %>
+    <div class="form-group">
+      <%= f.submit "Add item", class: 'btn btn-success' %>
+    </div>
+<% end %>
