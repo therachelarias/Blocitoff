@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'item/create'
+
   devise_for :users
     resources :users, only: :show
+      resources :items, only: :create
 
   get 'user/show'
 
