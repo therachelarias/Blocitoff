@@ -14,6 +14,7 @@ gem 'pry-rails'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'devise'
+gem 'faker'
 
 
 
