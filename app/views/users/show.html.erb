@@ -1,5 +1,8 @@
 <h1>User</h1>
 
 <p>Here is my profile.</p>
+<ul class="list-unstyled">
+  <%= render current_user.items %>
+</ul>
 
-<p>Items</p>
+<%= render partial: "items/form", locals: {user: current_user, item: Item.new} %>
