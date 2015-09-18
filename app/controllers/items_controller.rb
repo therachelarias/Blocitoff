@@ -10,5 +10,15 @@ class ItemsController < ApplicationController
     end
     redirect_to user_path(@user)
   end
+
+  def destroy
+    @item = current_user.items.find(params[:id])
+    if @item.destroy
+      flash[:notice] = "Item complete"
+    else
+      flash[:notice] = "Item not complete"
+    end
+    redirect_to user_path(current_user)
+  end
 end
 

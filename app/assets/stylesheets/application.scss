@@ -8,3 +8,11 @@
 .nav {
   margin-top: 5px;
 }
+
+.items > li:nth-child(even) {
+  background-color: #eee;
+}
+
+.items > li {
+  padding: 5px;
+}
