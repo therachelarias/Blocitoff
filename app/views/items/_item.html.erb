@@ -2,5 +2,6 @@
   <%= item.name %>
   <div class='pull-right'>
     <%= link_to "", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok' %>
+    <%= item.days_left %>
   </div>
 </li>
