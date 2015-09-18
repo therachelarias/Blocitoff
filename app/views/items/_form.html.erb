@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-md-12">
-    <%= form_for [user, item], html: { class: 'form-inline' } do |f| %>
+    <%= form_for [user, item], class: 'form-horizontal form-control' do |f| %>
         <div class="form-group">
           <%= f.text_field :name, class: 'form-control', placeholder: "Enter item here" %>
         </div>
       <div class="pull-right">
-      <%= f.submit "Add item", class: 'btn btn-success' %>
+      <%= f.submit "Add item", class: 'btn btn-success pull-right' %>
       </div>
     <% end %>
   </div>

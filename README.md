@@ -2,4 +2,4 @@
 
 A self-destructing to-do list built with <a href="http://www.bloc.io" target="_blank">Bloc</a>.
 
-<a href="http://www.zerimar-blocitoff.herokuapp.com " target="_blank">Blocitoff</a>
+<a href="http://zerimar-blocitoff.herokuapp.com " target="_blank">Blocitoff</a>
