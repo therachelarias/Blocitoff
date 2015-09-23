@@ -1,6 +1,5 @@
-<h1>User</h1>
+<h1><%= current_user.email %>'s to do list</h1>
 
-<p>Here is my profile.</p>
 <ul class="list-unstyled items">
   <%= render current_user.items %>
 </ul>
